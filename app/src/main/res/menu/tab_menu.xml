@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_service"
+        android:title="@string/menu_service"
+        android:icon="@drawable/icn_tab_bill"
+        />
+    <item
+        android:id="@+id/menu_activity"
+        android:title="@string/menu_history"
+        android:icon="@drawable/icn_tab_list"
+        />
+    <item
+        android:id="@+id/menu_approval"
+        android:title="@string/menu_approval"
+        android:icon="@drawable/icn_tab_account"
+        />
+   <!-- <item
+        android:id="@+id/menu_account"
+        android:title="@string/menu_account"
+        android:icon="@drawable/icn_tab_account" />-->
+</menu>

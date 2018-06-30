@@ -1,5 +1,32 @@
 <resources>
     <string name="app_name">Journal</string>
-    <string name="title_activity_erplogin">Sign in</string>
+    <string name="title_activity_login">Sign in With Google</string>
     <string name="login_copyright">Copyright (c) 2018 Journal Udacity. All right reserved.</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sign_done_label">By Tapping Create Account, you accept the <a href="https://tuma.herokuapp.com/#tos">Terms of Services</a> and <a href="https://tuma.herokuapp.com/#privacy">Privacy Policy</a></string>
+    <string name="tagline">Fast . Secure . Instant</string>
+    <string name="title_activity_erpbase">ERPBaseActivity</string>
+    <string name="menu_service">ADD Diary</string>
+    <string name="menu_history">Diary History</string>
+    <string name="menu_approval">Logout</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_header">Menu</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_invite">add expense</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="Get_started">Get Started</string>
+    <string name="diary">Save your Diary</string>
+    <string name="plan"> Tap the button below and get started with everything Journal provided</string>
 </resources>

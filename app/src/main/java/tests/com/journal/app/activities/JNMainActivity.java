@@ -1,13 +1,9 @@
-package com.journal.app;
+package tests.com.journal.app.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class JNMainActivity extends AppCompatActivity {
+class JNMainActivityTest {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.jn_main_activity);
-    }
+
 }
