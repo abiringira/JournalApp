@@ -26,7 +26,12 @@
     <string name="menu_invite">add expense</string>
     <string name="drawer_open">open drawer</string>
     <string name="drawer_close">close drawer</string>
+    <string name="btn_link_to_login">Already registered. Sign IN!</string>
     <string name="Get_started">Get Started</string>
     <string name="diary">Save your Diary</string>
     <string name="plan"> Tap the button below and get started with everything Journal provided</string>
+    <string name="compose_hint">Write your Diary ...</string>
+    <string name="diary_section_title">New Diary</string>
+    <string name="done_button">Save</string>
+    <string name="ok">OK</string>
 </resources>

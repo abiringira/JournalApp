@@ -26,6 +26,7 @@ public class JNBaseActivity extends AppCompatActivity {
 
     public void straightLogout() {
         Intent intent = new Intent(this, JNAppLauncherActivity.class);
+        startActivity(intent);
 
     }
 

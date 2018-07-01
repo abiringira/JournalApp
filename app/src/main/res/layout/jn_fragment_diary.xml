@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="fill_parent"
+    android:background="@color/windowBackground"
+    android:paddingBottom="@dimen/default_scroll_top_padding">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground">
+
+        <TextView
+            android:text="@string/diary_section_title"
+            style="@style/AppTheme.SectionTitle"/>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            >
+
+            <EditText style="@style/AppTheme.InputEditText"
+                android:id ="@+id/edit_input"
+                android:layout_width ="0dip"
+                android:layout_height ="wrap_content"
+                android:layout_weight ="1"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines ="5"
+                android:maxLength ="2000"
+                android:hint ="@string/compose_hint"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            android:paddingTop="30sp">
+
+            <Button android:id="@+id/continue_button"
+                style="@style/AppTheme.ButtonLayout"
+
+                android:text="@string/done_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -10,7 +10,7 @@
         android:icon="@drawable/icn_tab_list"
         />
     <item
-        android:id="@+id/menu_approval"
+        android:id="@+id/menu_account"
         android:title="@string/menu_approval"
         android:icon="@drawable/icn_tab_account"
         />

@@ -32,6 +32,66 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.SectionTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:layout_margin">@dimen/activity_default_margin</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
 
+    <style name="AppTheme.InputLabel">
+        <item name="android:layout_width">@dimen/label_default_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.InputLabel_checkout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.InputEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+
+        <item name="android:layout_marginLeft">@dimen/input_text_default_margin</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+    </style>
+
+    <style name="AppTheme.InputRowLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="colorButtonNormal">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.ButtonLayout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">70sp</item>
+    <item name="android:layout_marginRight">70sp</item>
+    <item name="android:background">@color/colorSecondary</item>
+    <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
 
 </resources>

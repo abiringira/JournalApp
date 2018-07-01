@@ -1,5 +1,7 @@
 package com.journal.app.activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -57,6 +59,21 @@ public class JNLoginActivity extends JNBaseActivity {
     }
 
 
+
+    private void showMessage(String msg) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(msg)
+                .setTitle(getResources().getString(R.string.app_name));
+
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.d(TAG, "Clicked on OK on Alert box");
+
+
+            }
+        });
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -69,18 +86,18 @@ public class JNLoginActivity extends JNBaseActivity {
      * If there are form errors (invalid email, missing fields, etc.), the
      * errors are presented and no actual login attempt is made.
      */
-    private void attemptLogin() {
+    public void attemptLogin() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
 
     }
 
-    private boolean isEmailValid(String email) {
+    public boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
         return email.contains("@");
     }
 
-    private boolean isPasswordValid(String password) {
+    public boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
         return password.length() > 4;
     }
@@ -124,6 +141,9 @@ public class JNLoginActivity extends JNBaseActivity {
             // a listener.
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
+        } else {
+            String message = "Invalid Email or Password";
+            showMessage(message);
         }
     }
 
